@@ -1,0 +1,36 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    padding: 10px 80px;
+
+}
+.navbar a{
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+}
+.navbar a span{
+    color: red;
+}
+.navbar .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list a{
+    font-size: 18px;
+    font-weight: 500;
+}
+.list a:hover{
+    color: red;
+    cursor: pointer;
+}
