@@ -18,10 +18,10 @@ const App = () => {
   let token = localStorage.getItem('token')
   return (
     <>
-    <Routes>
+    <Routes>   
       <Route path='/signup' element={<Signup />}/>
       <Route path='/signin' element={<Signin />}/>
-      <Route path='/dashboard' element={token ?<Dashboard/>: <Navigate to='signin'/>}/>
+      <Route path='/dashboard' element={token ?<Dashboard/>: <Navigate to='/signin'/>}/>
       <Route path='*' element={<Notfound />}/>
       <Route path='/about/:id' element={<About />}/>
       <Route path='/feed/*' element={<Feed />}/>
